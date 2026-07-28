@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font-sans: Arial, Helvetica, sans-serif; --font-serif: Georgia, 'Times New Roman', serif; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--font-sans); background: #f7f4ee; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+.font-serif { font-family: var(--font-serif); }
+.map-grid { background-color:#e4f1ee; background-image: linear-gradient(#bfd9d3 1px,transparent 1px),linear-gradient(90deg,#bfd9d3 1px,transparent 1px); background-size: 36px 36px; }
+.dark { color-scheme: dark; }
+.dark .app-shell { background:#111a20; color:#f3f8f7; }
+.dark .panel { background:#19262f; border-color:#31434b; }
+.dark .muted { color:#aebcc1; }
+@keyframes signal { 0%,100% { transform:scaleY(.35) } 50% { transform:scaleY(1) } }
+.signal-bar { animation: signal 1s ease-in-out infinite; transform-origin:bottom; }
